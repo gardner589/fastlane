@@ -1,0 +1,41 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :custom_lane do
+    # capture_screenshots(    # generate new screenshots for the App Store
+    #   clear_previous_screenshots: true
+    # )
+    # appicon(
+    #   appicon_devices: [:iphone],
+    #   appicon_path: 'first_try/Images.xcassets' # output path
+    # )
+    # build_app(scheme: "MyApp")
+    # sync_code_signing(type: "appstore")  # see code signing guide for more information
+    upload_to_app_store
+    # add actions here: https://docs.fastlane.tools/actions
+  end
+
+  # lane :beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    # gym(scheme: "first_try") # Build your app - more options available
+    # pilot
+    # match(type: "development") # more information: https://codesigning.guide
+    # build_app(scheme: "first_try")
+  # end
+end

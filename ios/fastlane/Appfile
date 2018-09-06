@@ -1,0 +1,15 @@
+# app_identifier("[[APP_IDENTIFIER]]") # The bundle identifier of your app
+# apple_id("[[APPLE_ID]]") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
+
+# xcodebuild -exportArchive \
+#            -exportFormat ipa \
+#            -archivePath "build/first_try.xcarchive" \
+#            -exportPath "build/first_try.ipa" \
+#            -exportProvisioningProfile "match Development org.fastlane.first-try"
+
+# App specific password
+# xxqh-fswm-chxq-jnma
